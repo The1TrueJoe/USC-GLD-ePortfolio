@@ -1,12 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset and Body Styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     line-height: 1.6;
     background-color: #f0f0f0;
     color: #333;
 }
 
+/* Navigation Styling */
 nav {
     background-color: #73000a; /* Garnet */
     color: #fff;
@@ -32,6 +44,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Main Content Area */
 section {
     padding: 20px;
     background-color: #fff;
@@ -39,12 +52,22 @@ section {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* This allows the section to grow and push the footer down */
 }
 
 h1, h2, h3 {
     color: #73000a; /* Garnet */
 }
 
+/* Profile Picture Styling */
+.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -53,11 +76,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.profile-pic {
-    max-width: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto;
+    margin-top: auto; /* Ensures footer is pushed to the bottom if there's not enough content */
 }
