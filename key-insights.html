@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Key Insights - Joseph Telaak ePortfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script> <!-- JavaScript for tab functionality -->
 </head>
 <body>
     <nav>
@@ -20,8 +21,15 @@
         <h2>Key Insights</h2>
         <p>These insights highlight the major lessons I've learned during my studies and research activities.</p>
 
-        <!-- CSCE/ELCT Class Projects -->
-        <article>
+        <!-- Tab Navigation -->
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'Insight1')">Insight 1</button>
+            <button class="tablinks" onclick="openTab(event, 'Insight2')">Insight 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Insight3')">Insight 3</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div id="Insight1" class="tabcontent">
             <h3>CSCE/ELCT Class Projects</h3>
             <p>These projects, completed during my CSCE and ELCT courses, demonstrate my hands-on experience in applying theoretical concepts to real-world challenges.</p>
             <div class="artifacts">
@@ -34,10 +42,9 @@
                     <p>CSCE 790 Project Proposal</p>
                 </a>
             </div>
-        </article>
+        </div>
 
-        <!-- Research Papers -->
-        <article>
+        <div id="Insight2" class="tabcontent">
             <h3>Research Papers</h3>
             <p>These papers reflect my contributions to academic research, where I explored complex topics and shared my findings with the broader scientific community.</p>
             <div class="artifacts">
@@ -50,10 +57,9 @@
                     <p>AutoSense MobiSys Paper</p>
                 </a>
             </div>
-        </article>
+        </div>
 
-        <!-- Presentations and Proposals -->
-        <article>
+        <div id="Insight3" class="tabcontent">
             <h3>Presentations and Proposals</h3>
             <p>These presentations and proposals showcase my ability to communicate complex ideas effectively and propose innovative solutions in both academic and professional settings.</p>
             <div class="artifacts">
@@ -66,16 +72,11 @@
                     <p>Magellan Scholar Research Proposal</p>
                 </a>
             </div>
-        </article>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Joseph Telaak. All rights reserved.</p>
-        <p>
-            <a href="mailto:jtelaak@sc.edu">Email Me</a> |
-            <a href="https://linkedin.com/in/jtelaak" target="_blank">LinkedIn</a> |
-            <a href="resume.pdf" target="_blank">Resume</a>
-        </p>
     </footer>
 </body>
 </html>
