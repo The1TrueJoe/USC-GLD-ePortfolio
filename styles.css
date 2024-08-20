@@ -17,9 +17,9 @@ body {
     background-color: #f0f0f0;
     color: #333;
     line-height: 1.6;
+    margin: 0 15px; /* Adds some padding on mobile screens */
 }
 
-/* Navigation Styling */
 nav {
     background-color: #73000a; /* Garnet */
     color: #fff;
@@ -51,11 +51,10 @@ nav ul li a:hover {
     color: #d3d3d3; /* Slight hover effect */
 }
 
-/* Main Content Area */
 section {
-    padding: 40px 30px; /* Increased padding for more space */
+    padding: 20px 10px; /* Adjusted for better scaling */
     background-color: #fff;
-    margin: 30px auto;
+    margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Larger shadow for focus */
@@ -68,21 +67,21 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 32px; /* Larger font size for main heading */
-    margin-bottom: 30px; /* More space below main heading */
+    font-size: 28px; /* Adjusted for smaller screens */
+    margin-bottom: 20px; /* More space below main heading */
 }
 
 h2 {
-    font-size: 26px; /* Adjusted font size for subheadings */
+    font-size: 24px; /* Adjusted font size for subheadings */
 }
 
 h3 {
-    font-size: 22px; /* Smaller font size for section headings */
+    font-size: 20px; /* Smaller font size for section headings */
 }
 
 p {
     margin-bottom: 20px; /* Space between paragraphs */
-    font-size: 16px; /* Slightly larger font for readability */
+    font-size: 16px;
     color: #333; /* Ensure the text color is clear */
     line-height: 1.8; /* Extra line spacing for better readability */
 }
@@ -94,8 +93,8 @@ strong {
 /* Intro Tabs Styling */
 .intro-tabs {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+    flex-direction: column; /* Stack tabs vertically on mobile */
+    margin-top: 20px;
 }
 
 .tab {
@@ -103,8 +102,7 @@ strong {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    margin: 0 10px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -125,7 +123,7 @@ strong {
 
 /* Social Links Styling */
 .social-links {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -139,7 +137,7 @@ strong {
     align-items: center;
     color: #73000a;
     text-decoration: none;
-    margin: 0 15px;
+    margin: 10px 0; /* Stack vertically on mobile */
     padding: 10px 15px;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -220,4 +218,17 @@ footer a {
 
 footer a:hover {
     color: #d3d3d3;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .intro-tabs {
+        flex-direction: row; /* Row layout for larger screens */
+    }
+    .tab {
+        margin-bottom: 0;
+    }
+    .social-links a.social-link {
+        margin: 0 15px;
+    }
 }
