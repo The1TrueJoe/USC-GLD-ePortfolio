@@ -109,4 +109,9 @@ footer {
     width: 100%;
     margin-top: auto; /* Ensures footer is pushed to the bottom */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow for footer */
+    font-size: 14px; /* Slightly smaller font size for the footer */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
 }
