@@ -53,12 +53,42 @@ nav ul li a:hover {
 
 /* Main Content Area */
 section {
-    padding: 20px; /* Adjusted for better scaling */
+    padding: 20px;
     background-color: #fff;
     margin: 20px auto;
     max-width: 90%; /* Scales with screen size */
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Larger shadow for focus */
+}
+
+h1, h2, h3 {
+    color: #73000a; /* Garnet */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+strong {
+    color: #000;
 }
 
 /* Intro Tabs Styling for Home Page */
@@ -145,7 +175,7 @@ section {
     align-items: center;
     color: #73000a;
     text-decoration: none;
-    margin: 10px 0; /* Stack vertically on mobile */
+    margin: 10px 0;
     padding: 10px 15px;
     border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -181,8 +211,8 @@ section {
 }
 
 .artifacts a:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    color: #73000a; /* Garnet color on hover */
+    transform: translateY(-5px);
+    color: #73000a;
 }
 
 .artifacts img {
@@ -197,8 +227,8 @@ section {
     max-width: 150px;
     border-radius: 50%;
     display: block;
-    margin: 20px auto; /* Space around the image */
-    border: 3px solid #73000a; /* Garnet border around profile pic */
+    margin: 20px auto;
+    border: 3px solid #73000a;
 }
 
 /* Footer Styling */
@@ -208,9 +238,9 @@ footer {
     text-align: center;
     padding: 15px 0;
     width: 100%;
-    margin-top: auto; /* Ensures footer is pushed to the bottom */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow for footer */
-    font-size: 14px; /* Slightly smaller font size for the footer */
+    margin-top: auto;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
 }
 
 footer p {
@@ -231,11 +261,11 @@ footer a:hover {
 /* Responsive Adjustments */
 @media (min-width: 768px) {
     section {
-        max-width: 750px; /* Scales to wider on larger screens */
+        max-width: 750px;
     }
     
     .intro-tabs {
-        flex-direction: row; /* Row layout for larger screens */
+        flex-direction: row;
     }
     .tab {
         margin-bottom: 0;
@@ -247,6 +277,6 @@ footer a:hover {
 
 @media (min-width: 1200px) {
     section {
-        max-width: 1100px; /* Scales even wider for large screens */
+        max-width: 1100px;
     }
 }
