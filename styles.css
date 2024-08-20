@@ -13,7 +13,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    line-height: 1.6;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
     background-color: #f0f0f0;
     color: #333;
 }
@@ -52,7 +52,7 @@ section {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; /* This allows the section to grow and push the footer down */
+    flex: 1; /* This makes the section take up any remaining space */
 }
 
 h1, h2, h3 {
@@ -73,8 +73,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
+    width: 100%;
     position: relative;
     bottom: 0;
-    width: 100%;
-    margin-top: auto; /* Ensures footer is pushed to the bottom if there's not enough content */
 }
