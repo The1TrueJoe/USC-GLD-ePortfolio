@@ -46,17 +46,25 @@ nav ul li a {
 
 /* Main Content Area */
 section {
-    padding: 20px;
+    padding: 40px 20px; /* More padding for better readability */
     background-color: #fff;
     margin: 20px auto;
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+    line-height: 1.6; /* Better line spacing for readability */
 }
 
 h1, h2, h3 {
     color: #73000a; /* Garnet */
+    margin-bottom: 20px; /* Space after headings */
+}
+
+p {
+    margin-bottom: 20px; /* Space between paragraphs */
+    font-size: 16px; /* Slightly larger font for readability */
+    color: #333; /* Ensure the text color is clear */
 }
 
 /* Profile Picture Styling */
@@ -64,7 +72,7 @@ h1, h2, h3 {
     max-width: 150px;
     border-radius: 50%;
     display: block;
-    margin: 10px auto;
+    margin: 20px auto; /* Space around the image */
 }
 
 /* Footer Styling */
