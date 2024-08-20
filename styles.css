@@ -16,14 +16,16 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
     color: #333;
+    line-height: 1.6;
 }
 
 /* Navigation Styling */
 nav {
     background-color: #73000a; /* Garnet */
     color: #fff;
-    padding: 10px 0;
+    padding: 15px 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 nav ul {
@@ -42,29 +44,51 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #d3d3d3; /* Slight hover effect */
 }
 
 /* Main Content Area */
 section {
-    padding: 40px 20px; /* More padding for better readability */
+    padding: 40px 30px; /* Increased padding for more space */
     background-color: #fff;
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 800px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    line-height: 1.6; /* Better line spacing for readability */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Larger shadow for focus */
 }
 
 h1, h2, h3 {
     color: #73000a; /* Garnet */
     margin-bottom: 20px; /* Space after headings */
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 32px; /* Larger font size for main heading */
+    margin-bottom: 30px; /* More space below main heading */
+}
+
+h2 {
+    font-size: 26px; /* Adjusted font size for subheadings */
+}
+
+h3 {
+    font-size: 22px; /* Smaller font size for section headings */
 }
 
 p {
     margin-bottom: 20px; /* Space between paragraphs */
     font-size: 16px; /* Slightly larger font for readability */
     color: #333; /* Ensure the text color is clear */
+    line-height: 1.8; /* Extra line spacing for better readability */
+}
+
+strong {
+    color: #000; /* Darker color for emphasis */
 }
 
 /* Profile Picture Styling */
@@ -73,6 +97,7 @@ p {
     border-radius: 50%;
     display: block;
     margin: 20px auto; /* Space around the image */
+    border: 3px solid #73000a; /* Garnet border around profile pic */
 }
 
 /* Footer Styling */
@@ -80,7 +105,8 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     width: 100%;
     margin-top: auto; /* Ensures footer is pushed to the bottom */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow for footer */
 }
