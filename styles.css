@@ -91,6 +91,35 @@ strong {
     color: #000;
 }
 
+/* Hero Section Styling */
+.hero-section {
+    text-align: center;
+    background-color: #73000a; /* Garnet background */
+    color: #fff; /* White text */
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff; /* Ensure text is white */
+}
+
+.hero-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* Ensure text is white */
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 0;
+    color: #fff; /* Ensure text is white */
+}
+
 /* Intro Tabs Styling for Home Page */
 .intro-tabs {
     display: flex;
@@ -187,7 +216,7 @@ strong {
     margin-right: 8px;
 }
 
-social-links a.social-link:hover {
+.social-links a.social-link:hover {
     background-color: #f0f0f0;
     color: #d3d3d3;
 }
@@ -340,30 +369,4 @@ footer a:hover {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
-}
-
-/* Hero Section Styling */
-.hero-section {
-    text-align: center;
-    background-color: #73000a; /* Garnet background */
-    color: #fff;
-    padding: 50px 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-.hero-section h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.hero-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.hero-section p {
-    font-size: 18px;
-    margin-bottom: 0;
 }
