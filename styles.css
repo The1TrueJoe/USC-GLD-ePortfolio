@@ -187,7 +187,7 @@ strong {
     margin-right: 8px;
 }
 
-.social-links a.social-link:hover {
+social-links a.social-link:hover {
     background-color: #f0f0f0;
     color: #d3d3d3;
 }
@@ -279,4 +279,65 @@ footer a:hover {
     section {
         max-width: 1100px;
     }
+}
+
+/* Leadership Section Enhancements */
+#leadership {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#leadership h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+#leadership h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #73000a;
+    padding-bottom: 10px;
+}
+
+#leadership ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#leadership ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#leadership .artifacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#leadership .artifacts a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 48%; /* Ensure two artifacts fit side by side */
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#leadership .artifacts a:hover {
+    transform: translateY(-5px);
+    color: #73000a;
+}
+
+#leadership .artifacts img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
